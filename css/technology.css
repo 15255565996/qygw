@@ -1,0 +1,114 @@
+
+/*banner*/
+#banner img{
+  margin-top: 95px;
+}
+.side{
+  width:100%;
+  background: #e7e7e7;
+  margin-top: -5px;
+  line-height: 30px;
+}
+.side_list{
+  width:1200px;
+  margin: 0 auto;
+}
+.i-home {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background:url(../Images/sprite.png) no-repeat -78px -448px;
+}
+.side span{
+  margin: 0 6px;
+}
+.side a{
+  color: #666;
+}
+/*主体*/
+.main{
+  width: 1200px;
+  margin:auto;
+  padding: 30px  ;
+}
+.main .navlist{
+  float:left;
+}
+.navlist li{
+  overflow: hidden;
+  width:280px;
+  height: 60px;
+  margin-bottom: 1px;
+  background: #ffffff;
+  line-height: 60px;
+}
+.navlist li>i{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(../Images/help01_pre.png);
+  vertical-align: middle;
+  margin: 0 15px;
+}
+.navlist li>a{
+  color: #666666;
+  font-size: 16px;
+}
+.navlist li:hover{
+  background: #2680c4;
+}
+.navlist li:hover  a{
+  color: #ffffff;
+}
+.main .content{
+  margin-left: 300px;
+  background: #ffffff;
+  padding: 30px;
+  width: 840px;
+}
+.content .content_title{
+  padding-left: 35px;
+  background: url(../Images/help05_act.png) no-repeat left top;
+  font-size: 20px;
+  color: #2680c4;
+  line-height: 24px;
+  height: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.content .content_txt{
+  color: #333;
+  line-height: 30px;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+}
+.content .content_txt>b{
+  position: absolute;
+  left: 3px;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #f5f5f5;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.content_list li{
+  height: 67px;
+  line-height: 67px;
+  position: relative;
+  border-bottom: 1px dotted #d8d8d8;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.content_list li i{
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  margin-top: -4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d0d0d0;
+}

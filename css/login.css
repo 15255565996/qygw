@@ -1,0 +1,127 @@
+body{
+  margin: 0;
+  padding:0;
+  font-size: 12px;
+  font:14px/1.5 'Microsoft YaHei', 'Microsoft YaHei UI', 'WenQuanYi Micro Hei', Arial, sans-serif,\5b8b\4f53;
+}
+div:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+a{
+  color: #cccccc;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.lf{float:left;}
+.rt{float:right;}
+/*头部*/
+#header{
+  width:100%;
+  background: #1c273c;
+}
+#header .nav{
+  width:1200px;
+  height: 90px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 90px;
+}
+.nav .header_r ul>li{
+  float:left;
+  margin-right:10px;
+}
+.header_r ul>li a{
+  color:#229bed;
+}
+/*主体*/
+section{
+  width:100%;
+}
+.login{
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.login .login_r{
+  box-sizing: border-box;
+  width: 420px;
+  background: #fcfcfc;
+  border: 1px solid #ececec;
+  margin-left: 20px;
+  min-height: 200px;
+  margin-top: 80px;
+  padding:20px;
+}
+.login_r h2{
+  color:#666;
+  font-weight:normal;
+}
+.login_r input[type="text"]{
+  background: #fff url(../Images/member02.jpg) no-repeat 16px center;
+  border: 1px solid #f0f0f0;
+  padding: 14px 6% 14px 20%;
+  width: 73.33%;
+}
+.login_r input[type="password"]{
+  margin: 12px 0;
+  background: #fff url(../Images/member03.jpg) no-repeat 16px center;
+  border: 1px solid #f0f0f0;
+  padding: 14px 6% 14px 20%;
+  width: 73.33%;
+}
+.login_r article input.yanzm{
+  float: left;
+  padding: 17px 3%;
+  width: 50%;
+  background: #fff;
+}
+.login_r article a{
+  float: right;
+  height: 49px;
+  border: 1px solid #f0f0f0;
+  overflow: hidden
+}
+.login_r article a img{
+  display: block;
+  width: 100%;
+  height: 49px;
+}
+.login_r input[type=submit]{
+  margin: 20px 0;
+  height: 52px;
+  color: #fff;
+  background: #2680c4;
+  border: 0;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.login_r div{
+  margin-bottom: 30px;
+}
+.login_r div a{
+  color: #2680c4;
+}
+.login_r div span{
+  margin: 0 10px;
+  color: #2680c4;
+}
+/*尾部*/
+.footer{
+  background: #4a4f5c;
+  text-align: center;
+  font-size: 12px;
+  color: #838895;
+  line-height: 24px;
+  padding: 30px 0;
+}

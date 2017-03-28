@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+  <div class="nav">
+    <div class="logo lf">
+      <a href="index.html">
+        <img src="Images/logo.png" style="vertical-align: middle;" />
+      </a>
+    </div>
+    <div class="header_r rt">
+      <ul class="lf">
+        <li><a href="register.html">立即注册</a></li>
+        <li style="color: #ffffff;">or</li>
+        <li><a href="login.html">立即登录</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!--主体-->
+<div class="r_top">
+  <div class="register">
+    <ul >
+      <li>
+        <i class="i_01"></i>
+        <a href="#">
+          <dl class="r_img">
+            <dt><img src="Images/member05.jpg"/></dt>
+            <dd>设置用户名</dd>
+          </dl>
+        </a>
+      </li>
+      <li>
+        <i></i>
+        <a href="#">
+          <dl class="r_img">
+            <dt><img src="Images/member06.jpg"/></dt>
+            <dd>填写账号信息</dd>
+          </dl>
+        </a>
+      </li>
+      <li>
+        <i></i>
+        <a href="#">
+          <dl class="r_img">
+            <dt><img src="Images/member07.jpg"/></dt>
+            <dd>注册成功</dd>
+          </dl>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--注册-->
+<div class="r_main">
+  <div class="main_box">
+    <ul>
+      <li>
+        <span>联系人手机：</span>
+        <input type="text" id="upwd2" placeholder="请输入手机号码"/>
+        <b style="font-weight: normal;color: #b29999;">请输入手机号</b>
+      </li>
+      <li>
+        <span>手机验证码：</span>
+        <input type="text" class="inp_yzm" placeholder="请输入手机验证码"/>
+       <button type="button" class="btn1">获取验证码</button>
+      </li>
+      <li class="li_checkbox"><label>
+        <input type="checkbox" checked/>
+        <span>创建网站账号同时，我同意 <a href="#">《服务条款》</a></span>
+      </label>
+      </li>
+      <li class="li_btn">
+        <button type="button" class="btn2">下一步</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--适用流程-->
+<div class="liucheng">
+  <h2>30天免费试用流程</h2>
+  <ul>
+    <li>
+      <i class="c_01"></i>
+      <p>注册/登录</p>
+    </li>
+    <li>
+      <i class="c_02"></i>
+      <p>下载/安装 <br/>Server服务端(30天试用版)</p>
+    </li>
+    <li>
+      <i class="c_03"></i>
+      <p>安装win/ios/android <br/>客户端</p>
+    </li>
+    <li>
+      <i class="c_04"></i>
+      <p>试用/测试</p>
+    </li>
+  </ul>
+</div>
+<!--尾部-->
+<footer class="footer">
+  CopyRight© by Cloudsoar Networks Inc. soar<br>
+  粤公网安备 224030502000131号
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  $(function () {
+    function phoneCheck() {
+      var phone = $.trim($('#upwd2').val());
+      var phonep = $('#upwd2').next('b');
+      var regPhone = /^1[3578]\d{9}$/;
+      if (!phone) {
+        phonep.show().text(' ').text('手机号不能为空');
+        return false;
+      } else if (!regPhone.test(phone)) {
+        phonep.show().text(' ').text('请输入正确的手机号格式');
+        return false;
+      } else {
+        phonep.hide();
+        return true;
+      }
+    }
+    $('#upwd2').blur(phoneCheck);
+  })
+</script>
+</body>
+</html>

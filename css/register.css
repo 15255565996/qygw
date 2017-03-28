@@ -1,0 +1,168 @@
+body{
+  margin: 0;
+  padding:0;
+  font-size: 12px;
+  font:14px/1.5 'Microsoft YaHei', 'Microsoft YaHei UI', 'WenQuanYi Micro Hei', Arial, sans-serif,\5b8b\4f53;
+}
+div:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+a{
+  color: #cccccc;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.lf{float:left;}
+.rt{float:right;}
+/*头部*/
+#header{
+  width:100%;
+  background: #1c273c;
+}
+#header .nav{
+  width:1200px;
+  height: 90px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 90px;
+}
+.nav .header_r ul>li{
+  float:left;
+  margin-right:10px;
+}
+.header_r ul>li a{
+  color:#229bed;
+}
+/*主体*/
+.r_top .register{
+  width:1005px;
+  margin: auto;
+}
+.r_top .register li{
+  float:left;
+}
+.register ul>li>i{
+  display:inline-block;
+  width:335px;
+  height: 2px;
+  background: #f5f5f5;
+  margin-top: 80px;
+}
+.register ul>li .i_01{
+  background: #2680c4;
+}
+.register ul>li .r_img{
+  position: relative;
+  top: -42px;
+  left: 133px;
+}
+.register ul>li .r_img dd{
+  color: #666666;
+}
+/*30天免费试用流程*/
+.liucheng{
+  width:1200px;
+  margin: auto;
+  padding:30px 5px;
+  text-align: center;
+}
+.liucheng h2{
+  color:#4e9bd2;
+  margin-bottom: 40px;
+}
+.liucheng ul>li{
+  float:left;
+  width:250px;
+  text-align: center;
+  margin-left: 40px;
+}
+.liucheng ul>li:first-child{
+  margin-right:10px;
+}
+.liucheng ul>li>i{
+  display: inline-block;
+  width: 113px;
+  height: 125px;
+  background: url("../Images/industry_num.png") no-repeat;
+}
+.liucheng ul>li>i.c_02{
+  background-position:0 -125px ;
+}
+.liucheng ul>li>i.c_03{
+  background-position:0 -250px ;
+}
+.liucheng ul>li>i.c_04{
+  background-position:0 -375px ;
+}
+/*注册*/
+.r_main{
+  padding: 30px 0;
+  background: #f5f5f5 url(../Images/member08.jpg) no-repeat 0 bottom;
+}
+.r_main .main_box{
+  box-sizing: border-box;
+  width:1005px ;
+  height: 460px;
+  padding: 30px;
+  margin: auto;
+  background: #ffffff;
+}
+.r_main .main_box ul>li{
+  margin-bottom: 20px;
+
+}
+.r_main .main_box input{
+  border: 1px solid #f0f0f0;
+  padding-left: 20px;
+  margin: 0 15px;
+}
+.r_main .main_box input[type="text"]{
+  width: 370px;
+  height: 50px;
+}
+.r_main .main_box input.inp_yzm{
+  width:210px;
+}
+.r_main .main_box .btn1{
+  width:108px;
+  height:48px;
+  border: 1px solid #cce9ff;
+  background: #e4f3ff;
+  cursor: pointer;
+}
+.r_main .main_box .li_checkbox{
+  margin-left: 90px;
+}
+.main_box .li_checkbox a{
+  color:#268fd4;
+}
+.r_main .main_box .btn2{
+  width:370px;
+  height:48px ;
+  line-height: 48px;
+  color: #ffffff;
+  background: #2680c4;
+  border: 1px solid #2680c4;
+  border-radius: 3px;
+  margin-left: 100px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*尾部*/
+.footer{
+  background: #4a4f5c;
+  text-align: center;
+  font-size: 12px;
+  color: #838895;
+  line-height: 24px;
+  padding: 30px 0;
+}
